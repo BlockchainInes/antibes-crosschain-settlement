@@ -129,12 +129,6 @@ Key controls include:
 | Lifecycle persistence | Maintains settlement processing state |
 | Failure classification | Separates recoverable from permanent failures |
 
-Further design documentation is available in:
-
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-- [`docs/THREAT-MODEL.md`](docs/THREAT-MODEL.md)
-- [`docs/ADRs.md`](docs/ADRs.md)
-
 ## Automated Verification
 
 The project contains separate automated test coverage for the Solidity contracts and the TypeScript relayer.

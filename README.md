@@ -231,14 +231,11 @@ antibes-crosschain-settlement/
 │   └── sepolia.json
 │
 ├── docs/
-│   ├── assets/
-│   │   ├── 31-tests-passed.png
-│   │   ├── 79-tests-passed.png
-│   │   ├── cross-chain-confirmation.png
-│   │   └── source-code-verified.png
-│   ├── ADRs.md
-│   ├── ARCHITECTURE.md
-│   └── THREAT-MODEL.md
+│   └── assets/
+│       ├── 31-tests-passed.png
+│       ├── 79-tests-passed.png
+│       ├── cross-chain-confirmation.png
+│       └── source-code-verified.png
 │
 ├── .env.example
 ├── .gitignore

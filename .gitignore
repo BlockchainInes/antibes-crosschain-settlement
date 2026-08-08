@@ -1,0 +1,277 @@
+# ============================================================
+# Antibes Cross-Chain Settlement
+# Security-first .gitignore
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SECRETS / ENVIRONMENT VARIABLES
+# NEVER COMMIT PRIVATE KEYS, MNEMONICS, RPC CREDENTIALS
+# OR API KEYS
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.env
+*.secret
+*.secrets
+
+secrets/
+private/
+credentials/
+
+credentials.json
+secrets.json
+
+
+# ------------------------------------------------------------
+# PRIVATE KEYS / CERTIFICATES / WALLET MATERIAL
+# ------------------------------------------------------------
+
+*.key
+*.pem
+*.p12
+*.pfx
+
+keystore/
+keystores/
+wallet/
+wallets/
+
+*.keystore
+*.wallet
+
+mnemonic.txt
+seed.txt
+seedphrase.txt
+
+private-key.txt
+private_key.txt
+privatekey.txt
+
+deploy-credentials.*
+deployment-secrets.*
+
+
+# ------------------------------------------------------------
+# NODE / PACKAGE MANAGER
+# ------------------------------------------------------------
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+
+# ------------------------------------------------------------
+# HARDHAT / GENERATED FILES
+# ------------------------------------------------------------
+
+artifacts/
+cache/
+
+coverage/
+coverage.json
+
+typechain/
+typechain-types/
+types/ethers-contracts/
+
+
+# ------------------------------------------------------------
+# BUILD OUTPUT
+# ------------------------------------------------------------
+
+dist/
+build/
+out/
+
+*.tsbuildinfo
+
+
+# ------------------------------------------------------------
+# TEMPORARY / FAILED / EXPERIMENTAL CODE
+# ------------------------------------------------------------
+
+tmp/
+temp/
+.tmp/
+.temp/
+
+scratch/
+sandbox/
+
+backup/
+backups/
+
+old/
+_old/
+
+failed/
+failures/
+
+experiments/
+experimental/
+
+draft/
+drafts/
+
+archive/
+archives/
+
+
+# ------------------------------------------------------------
+# BACKUP FILES / COPIES / ABANDONED VERSIONS
+# ------------------------------------------------------------
+
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.save
+
+*.copy
+*.copy.*
+*.disabled
+
+*_old.*
+*_backup.*
+*_bak.*
+*_broken.*
+*_failed.*
+*_temp.*
+*_tmp.*
+
+*-old.*
+*-backup.*
+*-broken.*
+*-failed.*
+*-temp.*
+
+
+# ------------------------------------------------------------
+# LOGS / LOCAL TEST OUTPUT
+# ------------------------------------------------------------
+
+logs/
+*.log
+
+test-results/
+test-output/
+reports/
+
+.mocha-cache/
+.nyc_output/
+.coverage/
+
+*.lcov
+
+
+# ------------------------------------------------------------
+# LOCAL DEPLOYMENT OUTPUT
+#
+# deployments/sepolia.json is intentionally NOT ignored.
+# It contains public deployment metadata only.
+# ------------------------------------------------------------
+
+deployments/local/
+deployments/localhost/
+deployments/hardhat/
+
+deployment-output/
+deployment-output.json
+
+
+# ------------------------------------------------------------
+# LOCAL RELAYER STATE / DATABASES
+# ------------------------------------------------------------
+
+*.db
+*.sqlite
+*.sqlite3
+
+data/
+local-data/
+relayer-data/
+relayer-state/
+
+
+# ------------------------------------------------------------
+# LOCAL CONFIGURATION OVERRIDES
+# ------------------------------------------------------------
+
+*.local
+*.local.json
+*.local.ts
+*.local.js
+
+config.local.*
+settings.local.*
+
+
+# ------------------------------------------------------------
+# IDE / EDITOR LOCAL SETTINGS
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+*.code-workspace
+
+
+# ------------------------------------------------------------
+# OPERATING SYSTEM FILES
+# ------------------------------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+$RECYCLE.BIN/
+
+
+# ------------------------------------------------------------
+# WINDOWS / POWERSHELL TEMP FILES
+# ------------------------------------------------------------
+
+*.lnk
+*.stackdump
+*.ps1.log
+
+
+# ------------------------------------------------------------
+# FOUNDRY LOCAL OUTPUT
+# ------------------------------------------------------------
+
+cache_forge/
+broadcast/*/31337/
+broadcast/*/31337-latest/
+
+
+# ------------------------------------------------------------
+# INTENTIONALLY PUBLIC / VERSIONED FILES
+# ------------------------------------------------------------
+
+!.env.example
+!README.md
+!package.json
+!package-lock.json
+!tsconfig.json
+!hardhat.config.ts

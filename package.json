@@ -1,0 +1,30 @@
+{
+  "name": "antibes-crosschain-settlement",
+  "version": "1.0.0",
+  "description": "Finality-aware cross-chain settlement architecture with compliance enforcement, cryptographic signing, replay protection and deterministic recovery.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test:contracts": "hardhat test mocha",
+    "test:relayer": "node --import=tsx ./node_modules/mocha/bin/mocha.js \"relayer/test/**/*.test.ts\"",
+    "test": "npm run test:contracts && npm run test:relayer",
+    "deploy:sepolia": "hardhat run ./scripts/deploy.ts --network sepolia"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "pino": "^10.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.7",
+    "@nomicfoundation/hardhat-verify": "^3.0.22",
+    "@types/node": "^26.2.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^3.12.0",
+    "tsx": "^4.23.11",
+    "typescript": "^7.0.2"
+  }
+}
+ 

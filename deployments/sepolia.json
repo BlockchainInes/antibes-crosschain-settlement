@@ -1,0 +1,21 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contracts": {
+    "SettlementSource": {
+      "address": "0xF843494b07198e69d7436452fE2B06eEE5Ab91cf",
+      "etherscan": "https://sepolia.etherscan.io/address/0xF843494b07198e69d7436452fE2B06eEE5Ab91cf#code",
+      "verified": true
+    },
+    "ComplianceRegistry": {
+      "address": "0xbC0a531183a84D13f953033116921A76618Da8ec",
+      "etherscan": "https://sepolia.etherscan.io/address/0xbC0a531183a84D13f953033116921A76618Da8ec#code",
+      "verified": true
+    },
+    "SettlementDestination": {
+      "address": "0xab974c63AE8b70F24242233d05f3f8f852368e0F",
+      "etherscan": "https://sepolia.etherscan.io/address/0xab974c63AE8b70F24242233d05f3f8f852368e0F#code",
+      "verified": true
+    }
+  }
+}
